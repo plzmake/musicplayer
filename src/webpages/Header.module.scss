@@ -1,0 +1,42 @@
+.headerInfo{
+ 
+ color: #fff;
+    font-size:medium;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 8%;
+    display: flex;
+    justify-content: center;
+    //margin-left: 120px !important;
+   
+
+
+}
+.headerInfo:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+.headerLogin{
+  font-size:medium;
+  color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+}
+.headerPadding:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+.headerPadding{
+  padding-left: 16%;
+  padding-right: 33%;
+}
+.headerText{
+  width:120px ;
+}
+.headerIcon{
+  
+}
+
