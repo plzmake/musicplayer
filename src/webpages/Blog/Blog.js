@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogMusic from './img/BlogMusic.png'
+import BlogMusic from '../img/BlogMusic.png'
 import Styles from './Blog.module.scss'
 class Blog extends React.Component {
   

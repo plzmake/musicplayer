@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+
+import React, { useState} from 'react';
 import axios from 'axios';
-import {FaHeadphones, FaFacebook,FaTwitter,FaGoogle,FaYoutube} from "react-icons/fa"
+import {FaHeadphones, FaFacebook,FaTwitter,FaYoutube} from "react-icons/fa"
 
 
 
@@ -27,10 +27,7 @@ const Footer = () => {
     }
   };
 
-  useEffect(() => {
-    // Get newsletter subscription status from server
-    // setIsSubscribed state accordingly
-  }, []);
+  
 
   return (
     <div className ="footer_all">
@@ -38,7 +35,7 @@ const Footer = () => {
       <footer>
         <div>
         
-          <h3>Subscribe to our newsletter</h3>
+          <h3>Subscribe to our news letter</h3>
           {isSubscribed ? (
             <p>Thank you for subscribing!</p>
           ) : (
@@ -62,16 +59,16 @@ const Footer = () => {
         </div>
         <div style={{marginTop:'12px'}}>
           <h3>Contact us</h3>
-          <p>Email: info@bookstore.com</p>
+          <p>Email: info@music.com</p>
           <span style={{display:'flex'}}><FaHeadphones className='footer-contact-icon'/><p>Phone: +1 (123) 456-7890</p></span>
           <div className="footer-head">
           
           <div className="footer-head-text-icon ">
             <ul className='box-social'>
-            <li ><a ><span className='box-social-margin-right box-social-icon-link back-gr-fb-icon'><FaFacebook/></span></a></li>
-            <li ><a ><span className='box-social-margin-right box-social-icon-link back-gr-tw-icon'><FaTwitter/></span></a></li>
-            <li ><a ><span className='box-social-margin-right box-social-icon-link back-gr-gg-icon'><FaGoogle/></span></a></li>
-            <li ><a ><span className='box-social-margin-right box-social-icon-link back-gr-yt-icon'><FaYoutube/></span></a></li>
+            <li ><a href='https://www.facebook.com/'><span className='box-social-margin-right box-social-icon-link back-gr-fb-icon'><FaFacebook/></span></a></li>
+            <li ><a href='https://twitter.com/'><span className='box-social-margin-right box-social-icon-link back-gr-tw-icon'><FaTwitter/></span></a></li>
+            
+            <li ><a href='https://www.youtube.com/'><span className='box-social-margin-right box-social-icon-link back-gr-yt-icon'><FaYoutube/></span></a></li>
             </ul>
           </div>
         </div>

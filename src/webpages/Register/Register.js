@@ -1,9 +1,9 @@
 import { Grid, FormControl, TextField, Autocomplete } from '@mui/material';
 import React, { useState } from 'react';
 import axios from 'axios';
-import { GreenButton, RedButton } from './button-theme/ButtonTheme';
+import { GreenButton, RedButton } from '../button-theme/ButtonTheme';
 import ConfirmDialog from './ConfirmDialog';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import Cookies from 'js-cookie'
 import Styles from './Register.module.scss'
 // tài khoản mẫu:
@@ -84,7 +84,7 @@ const Register = () => {
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});   
     } else {
         try {
-          const response = await axios.post('http://www.btl-web.com/api/register.php', trimmedInfo)
+          const response = await axios.post('/', trimmedInfo)
           Cookies.set('role', response.data.role, { expires: 1/24 })
           window.location.href = '/'          
         } catch (error) {

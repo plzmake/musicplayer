@@ -4,11 +4,11 @@ import {
     Route,
     Routes,
 } from "react-router-dom";
-import Footer from './Footer';
-import Header from './Header';
-import Register from './Register';
-import Login from './Login';
-import Blog from './Blog';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import Register from './Register/Register';
+import Login from './Login/Login';
+import Blog from './Blog/Blog';
 
 export default function Webpages () {
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Grid, FormControl, TextField } from '@mui/material';
-import {GreenButton} from './button-theme/ButtonTheme'
+import {GreenButton} from '../button-theme/ButtonTheme'
 import Cookies from 'js-cookie'
 
 function Login() {
@@ -36,7 +36,7 @@ function Login() {
       window.scrollTo({top: 0, left: 0, behavior: 'smooth'});   
     } else {
         try {
-          const response = await axios.post('http://localhost/api/verify-login.php', trimmedLoginCre)
+          const response = await axios.post('/', trimmedLoginCre)
           Cookies.set('role', response.data.role, { expires: 1/24 })
           // console.log(response)
           window.location.href = '/'

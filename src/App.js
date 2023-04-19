@@ -1,8 +1,8 @@
 
 import './App.css';
-import ScrollTopButton from './webpages/ScrollTopButton';
-import Header from './webpages/Header';
-import Footer from './webpages/Footer';
+import ScrollTopButton from './webpages/Scroll/ScrollTopButton';
+import Header from './webpages/Header/Header';
+import Footer from './webpages/Footer/Footer';
 import Webpages from './webpages/Webpages';
 function App() {
   return (
